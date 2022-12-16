@@ -16,6 +16,41 @@ h2.blau{
     color:green;
 }
 
-h1{
-    color:aqua
+header{
+    background-color:pink
+}
+nav{
+    background-color:aquamarine
+}
+div.bloc2{
+    color: green;
+    background-color: yellow;
+    display: inline-block;
+}
+span.caja {
+    /* color de fons */
+    background-color: yellow;
+    /* borde */
+    border: 1px solid red;
+    width: 240px;
+    height: 100px;
+    display: block;
+
+}
+div.caja {
+     /* color de fons */
+     background-color: yellow;
+     /* borde */
+     border: 1px solid red;
+     width: 240px;
+     height: 100px;
+     display: inline-block;
+}
+div.bloc1 {
+    background-color: red;
+    display: inline-block;
+}
+span.fecha{
+    font-style: oblique;
+    text-decoration:underline ;
 }
