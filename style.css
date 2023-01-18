@@ -81,3 +81,6 @@ p.p1 {
     top: -50px;
     width: 150px;
   }
+  img.derecha{
+    float: right;
+  }
