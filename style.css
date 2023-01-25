@@ -84,3 +84,13 @@ p.p1 {
   img.derecha{
     float: right;
   }
+  ul.z{
+    list-style-type:square ;
+  }
+  table {
+    border:red 1px solid ;
+  }
+
+  td,th{
+    border: blue 1px solid;
+  }
