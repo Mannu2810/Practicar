@@ -94,3 +94,6 @@ p.p1 {
   td,th{
     border: blue 1px solid;
   }
+  textarea {
+    resize: none;
+  }

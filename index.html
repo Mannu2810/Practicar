@@ -336,5 +336,127 @@
 </tbody>
 
 </table>
+
+<!-- Forms -->
+
+<section>
+    <form action="web.php" method="GET">
+    <p>Nombre <input type="text" name="nom" id="nom"></p>
+   
+    <p>
+    Apellidos <input type="text" name="cognoms"
+   id="cognoms">
+    </p>
+   
+    <p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="reset">
+    </p>
+    </form>
+    </section>
+
+    <h4>Formulario checkbox</h4>
+<section>
+    <form action="recibo.php'" method="get"></form>
+
+    <input type="checkbox" name="major" value="si" checked>
+    <hr>
+    <p>
+        Quin vehicle tens
+        moto <input type="checkbox" name="vehicle" value="moto">
+        bici <input type="checkbox" name="vehicle" value="bici">
+        cotxe <input type="checkbox" name="vehicle" value="cotxe">
+    </p>
+    <!-- checkbox circular -->
+    <p>
+        color favorit
+        roig <input type="radio" name="color">
+        verd <input type="radio" name="color">
+        blau <input type="radio" name="color">
+    
+    </p>
+    <!-- Form color -->
+    <p>
+        color
+        <input type="color" name="color">
+    </p>
+    <!-- Form rango -->
+<p>
+    Selecciona el teu nivell d'anglés 
+    <input type="range" name="rango" id="rango" min="0" max="10" step="1">
+</p>
+    <p>Nota <span id="nota"> </span></p>
+    <!-- Script para que salga el numero del rango -->
+    <script>
+        var slider = document.getElementById( "rango");
+        var output = document.getElementById( "nota");
+        output.innerHTML = slider.value;
+       
+        slider.oninput = function() {
+        output.innerHTML = this.value;
+        }
+        </script>
+    <!-- Forma para subir archivos -->
+    <p>foto
+        <input type="file" name="archivo" value="fitxer">
+    </p>
+    <!-- Form para area de texto -->
+    <p>
+        Observacions
+        <textarea name="observaciones" id="observaciones" cols="30" rows="10"></textarea>
+
+    </p>
+    <p>
+        Menú
+        <select name="menu" id="menu" multiple>
+            <option value="1">Uno</option>
+            <option value="2">Dos</option>
+            <option value="3">Tres</option>
+        </select>
+    </p>
+    <p>
+        Selecciona curs 
+        <select name="curs" id="curs">
+            <optgroup label="ASIR"></optgroup>
+                <option value="1asir">Primer</option>
+                <option value="2asir">Segon</option>
+            <optgroup label="DAM"></optgroup>
+                <option value="1dam">Primer</option>
+                <option value="2dam">Segon</option>
+            <optgroup label="DAW"></optgroup>
+                <option value="1daw">Primer</option>
+                <option value="2daw">Segon</option>
+            </select>
+    </p>
+
+    <!-- Form dentro de una caja -->
+    <p>
+        <fieldset>
+            <legend>Dades personals</legend>
+            <p>
+                nom
+                <input type="text" name="nomalumne">
+            </p>
+            <p>
+                edat
+                <input type="number" name="edatalumne">
+            </p>
+
+        </fieldset>
+    </p>
+    <!-- Form seleccionar desde texto -->
+    <p>
+        <label>
+        <input type="checkbox" name="casilla">
+        Casilla
+    </label>
+    </p>
+    <p>
+        <input type="checkbox" name="casilla1" id="casilla1">
+        <label for="casilla1">Casilla1</label>
+    </p>
+    <input type="submit" value="enviar">
+</form>
+</section>
 </body>
 </html>
