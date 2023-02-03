@@ -97,3 +97,9 @@ p.p1 {
   textarea {
     resize: none;
   }
+  a[title] {
+    color: green;
+  }
+  a[href="https://portal.edu.gva.es/ieselgrao/es/centro-nuevo/"] {
+    color: red;
+  }
