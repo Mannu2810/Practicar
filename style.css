@@ -103,3 +103,11 @@ p.p1 {
   a[href="https://portal.edu.gva.es/ieselgrao/es/centro-nuevo/"] {
     color: red;
   }
+  h4{
+    counter-reset: cuenta-ciclos;
+  }
+  p.ciclos::before{
+    content: counter(cuenta-ciclos) ".";
+    counter-increment: cuenta-ciclos 5;
+    color: red;
+  }
